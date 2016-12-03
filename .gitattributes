@@ -1,1 +1,2 @@
-releaseNote.py linguist-language=Python
+special-vendored-path/* linguist-vendored
+releaseNote.py linguist-vendored=false
