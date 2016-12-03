@@ -1,4 +1,4 @@
-# Release Note
+# Release Note [![Code Climate](https://codeclimate.com/github/sveneruso/releasenote/badges/gpa.svg)](https://codeclimate.com/github/sveneruso/releasenote)
 ***ReleaseNote*** is a project to automatically generate the release notes from git tags or branch.
 
 ## Install
