@@ -66,18 +66,6 @@ def generate_release():
 
     ff.write('Full History \n')
 
-    print('Start ' + extract_commit_info(commit_start, False))
-    for parent in commit_start.parents:
-        print('\t\t\t' + extract_commit_info(parent, False))
-        for super_parent in parent.parents:
-            print('\t\t\t\t\t\t' + extract_commit_info(super_parent, False))
-
-    print('End ' + extract_commit_info(commit_end, False))
-    for parent in commit_end.parents:
-        print('\t\t\t' + extract_commit_info(parent, False))
-        for super_parent in parent.parents:
-            print('\t\t\t\t\t\t' + extract_commit_info(super_parent, False))
-
     for commit in repo.walk(commit_start.hex, pygit2.GIT_SORT_TOPOLOGICAL):
         if commit.hex != commit_end.hex:
             ff.write(extract_commit_info(commit, True))
