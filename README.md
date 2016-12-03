@@ -12,7 +12,7 @@
 
 Example:
 
-To have the commits on developemnt but not on master
+To have the commits on development but not on master
 		
 		python3 releaseNote.py master development
 
