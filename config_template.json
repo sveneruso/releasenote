@@ -1,0 +1,4 @@
+{
+  "repo_path": "<Path to Repo>",
+  "commit_rule": "<Commit regex>"
+}
