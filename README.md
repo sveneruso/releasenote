@@ -1,5 +1,5 @@
 # Release Note
-This project is for generate release note from git branches and/or tag
+***ReleaseNote*** is a project to automatically generate the release notes from git tags or branch.
 
 ## Install
 - Download the project
@@ -14,6 +14,9 @@ Example:
 To have the commits on developemnt but not on master
 		
 		python3 releaseNote.py master development
+
+### How to contribute
+Fell free to make a pull request or open an issue if you found some bugs or have new features.
 
 ## Next
 - Generate config file with a wizard
