@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Releasenote by sveneruso</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/sveneruso/releasenote">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Releasenote</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/sveneruso/releasenote/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/sveneruso/releasenote/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="release-note" class="anchor" href="#release-note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release Note</h1>
+
+<p><strong><em>ReleaseNote</em></strong> is a project to automatically generate the release notes from git tags or branch.</p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+
+<ul>
+<li>Download the project</li>
+<li>Creat the config file using config_template.json example
+
+<ul>
+<li>Add the path to the repo</li>
+<li>Add the regex to identity your commit (For example this is the rule for trello URLs <strong><em>?:<a href="https://trello.com/c/%5Ba-z">https://trello.com/c/[a-z</a> A-Z 0-9 \/]{8}</em></strong>)</li>
+</ul>
+</li>
+<li>
+<p>Run to generate the release note</p>
+
+<pre><code>python3 releaseNote.py &lt;start&gt; &lt;end&gt;
+</code></pre>
+</li>
+</ul>
+
+<p>Example:</p>
+
+<p>To have the commits on developemnt but not on master</p>
+
+<pre><code>    python3 releaseNote.py master development
+</code></pre>
+
+<h3>
+<a id="how-to-contribute" class="anchor" href="#how-to-contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to contribute</h3>
+
+<p>Fell free to make a pull request or open an issue if you found some bugs or have new features.</p>
+
+<h2>
+<a id="next" class="anchor" href="#next" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next</h2>
+
+<ul>
+<li>Generate config file with a wizard</li>
+<li>Add compact and group mode</li>
+<li>Config file as parameter</li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/sveneruso">sveneruso</a> can be found on <a href="https://github.com/sveneruso/releasenote">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
