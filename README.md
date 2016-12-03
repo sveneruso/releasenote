@@ -4,10 +4,11 @@
 ## Install
 - Download the project
 - Creat the config file using config_template.json example
+	- Add the path to the repo
+	- Add the regex to identity your commit (For example this is the rule for trello URLs ***?:https://trello.com/c/[a-z A-Z 0-9 \/]{8}***)
 - Run to generate the release note
 
 		python3 releaseNote.py <start> <end>
-
 
 Example:
 
