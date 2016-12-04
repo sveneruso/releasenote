@@ -47,16 +47,17 @@
 
       <section id="main_content">
         <h1>
-<a id="release-note" class="anchor" href="#release-note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release Note</h1>
+<a id="release-note-" class="anchor" href="#release-note-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release Note <a href="https://codeclimate.com/github/sveneruso/releasenote"><img src="https://codeclimate.com/github/sveneruso/releasenote/badges/gpa.svg" alt="Code Climate"></a>
+</h1>
 
-<p><strong><em>ReleaseNote</em></strong> is a project to automatically generate the release notes from git tags or branch.</p>
+<p><strong><em>ReleaseNote</em></strong> is a project to generate automatically the release notes from git tags or branch.</p>
 
 <h2>
 <a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
 <ul>
 <li>Download the project</li>
-<li>Creat the config file using config_template.json example
+<li>Create the config file using config_template.json example
 
 <ul>
 <li>Add the path to the repo</li>
@@ -64,16 +65,14 @@
 </ul>
 </li>
 <li>
-<p>Run to generate the release note</p>
+<p>To generate the release note:</p>
 
 <pre><code>python3 releaseNote.py &lt;start&gt; &lt;end&gt;
 </code></pre>
 </li>
 </ul>
 
-<p>Example:</p>
-
-<p>To have the commits on developemnt but not on master</p>
+<p>For example, to include commits from the <em>development</em> branch but not on master</p>
 
 <pre><code>    python3 releaseNote.py master development
 </code></pre>
@@ -81,7 +80,7 @@
 <h3>
 <a id="how-to-contribute" class="anchor" href="#how-to-contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to contribute</h3>
 
-<p>Fell free to make a pull request or open an issue if you found some bugs or have new features.</p>
+<p>Feel free to make a pull request or open an issue if you find bugs or you want to propose new features.</p>
 
 <h2>
 <a id="next" class="anchor" href="#next" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next</h2>
