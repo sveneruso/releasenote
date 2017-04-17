@@ -6,15 +6,10 @@
 - Install libGit2  
 
 > $ wget https://github.com/libgit2/libgit2/archive/v0.25.0.tar.gz
-
 > $ tar xzf v0.25.0.tar.gz
-
 > $ cd libgit2-0.25.0/
-
 > $ cmake .
-
 > $ make
-
 > $ sudo make install
 
 - Install dependency
@@ -22,7 +17,7 @@
 
 - Creat the config file using config_template.json example
 	- Add the path to the repo
-	- Add the regex to identity your commit (For example this is the rule for trello URLs ***?:https://trello.com/c/[a-z A-Z 0-9 \/]{8}***)
+	- Add the regex to identity your commit (For example this is the rule for trello URLs **?:https://trello.com/c/[a-z A-Z 0-9 \/]{8}**)
 - Run to generate the release note
 
 		python3 releaseNote.py <start> <end>
