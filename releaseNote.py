@@ -26,7 +26,12 @@ def commit_filter(commit):
 
 def extract_commit(message):
     rule = r'{0}'.format(config['commit_rule'])
-    return re.search(rule, message).group()
+    if 'commit_match_group' in config:
+        group = config['commit_match_group']
+    else:
+        group = 0
+
+    return re.search(rule, message).group(group)
 
 
 def init(repo_location, start, end):
