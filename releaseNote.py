@@ -13,7 +13,7 @@ global repo
 global commit_start
 global commit_end
 
-output_folder = 'output/'
+output_folder = config['output_folder']
 
 
 def commit_filter(commit):
