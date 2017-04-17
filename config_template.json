@@ -1,5 +1,6 @@
 {
   "repo_path": "<Path to Repo>",
   "commit_rule": "<Commit regex>",
+  "commit_match_group": "<Commit regex group>[Optional: Default 0]",
   "output_folder": "<output folder (Mandatory)>"
 }
