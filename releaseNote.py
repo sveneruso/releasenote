@@ -44,7 +44,7 @@ def init(repo_location, start, end):
 
 def extract_commit_info(commit, full):
     if full:
-        commit_formatted = commit.hex + ':' +commit.author.name + ' - [' + commit.author.email + ']@' + str(commit.author.time)
+        commit_formatted = commit.hex + ':' + commit.author.name + ' - [' + commit.author.email + ']@' + str(commit.author.time)
         commit_formatted += commit.hex + ' - ' + commit.message
     else:
         commit_formatted = commit.hex + ' - ' + commit.message
@@ -94,8 +94,8 @@ def generate(start_release, end_release):
     f.write(strftime('Generated %a, %d %b %Y %H:%M:%S \n', gmtime()))
     f.write('\n')
 
-    for trello in generate_release():
-        f.write(trello + '\n')
+    for single_commit_from_list in generate_release():
+        f.write(single_commit_from_list + '\n')
 
     f.close()
     config_file.close()
